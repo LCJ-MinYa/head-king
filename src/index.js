@@ -12,6 +12,7 @@ const options = {
 	throttle: 10000,
 	forceProxyHttps: true,
 	silent: false,
+	wsIntercept: true
 };
 const proxyServer = new AnyProxy.ProxyServer(options);
 

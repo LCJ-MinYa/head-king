@@ -29,7 +29,7 @@ function searchResult(question, answerArray) {
 module.exports = {
 	summary: '头脑王者的规则',
 	* beforeSendResponse(requestDetail, responseDetail) {
-		if (requestDetail.url === 'https://question.hortor.net/question/bat/findQuiz') {
+		if (requestDetail.url === 'https://question-zh.hortor.net/question/bat/findQuiz') {
 			let newResponse = Object.assign({}, responseDetail.response);
 			let JsonBody = JSON.parse(newResponse.body.toString());
 			return new Promise((resolve, reject) => {
